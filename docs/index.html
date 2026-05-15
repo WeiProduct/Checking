@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Attendance System - Smart Check-in Solution</title>
+    <meta name="description" content="AI Attendance System is an iOS attendance and workforce management app with photo check-in, admin workflows, records, statistics, and AI support.">
+    <link rel="canonical" href="https://weiproduct.github.io/Checking/">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <i class="fas fa-clock"></i>
+                <span class="brand-mark" aria-hidden="true">AI</span>
                 <span>AI Attendance</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#demo">Demo</a></li>
-                <li><a href="#accounts">Test Accounts</a></li>
+                <li><a href="#roles">Roles</a></li>
                 <li><a href="#download">Download</a></li>
             </ul>
         </div>
@@ -38,13 +38,28 @@
                 <div class="hero-buttons">
                     <a href="#demo" class="btn btn-primary">View Demo</a>
                     <a href="https://github.com/WeiProduct/Checking" class="btn btn-secondary">
-                        <i class="fab fa-github"></i> GitHub
+                        GitHub
                     </a>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="phone-mockup">
-                    <img src="images/app-screenshot.png" alt="AI Attendance App">
+                <div class="product-panel" aria-label="AI Attendance product summary">
+                    <div class="panel-row">
+                        <span>Photo Check-in</span>
+                        <strong>Ready</strong>
+                    </div>
+                    <div class="panel-row">
+                        <span>Leave Approval</span>
+                        <strong>Admin</strong>
+                    </div>
+                    <div class="panel-row">
+                        <span>Attendance Records</span>
+                        <strong>Live</strong>
+                    </div>
+                    <div class="panel-row">
+                        <span>AI Assistant</span>
+                        <strong>Support</strong>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,42 +72,42 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-camera"></i>
+                        <span>01</span>
                     </div>
                     <h3>Photo Check-in</h3>
                     <p>Quick and secure attendance with photo verification</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-language"></i>
+                        <span>02</span>
                     </div>
                     <h3>Multi-language</h3>
                     <p>Support for English and Chinese with easy switching</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
+                        <span>03</span>
                     </div>
                     <h3>Statistics</h3>
                     <p>Comprehensive attendance analytics and reports</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-users-cog"></i>
+                        <span>04</span>
                     </div>
                     <h3>Admin Dashboard</h3>
                     <p>Powerful admin tools for employee management</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-robot"></i>
+                        <span>AI</span>
                     </div>
                     <h3>AI Assistant</h3>
                     <p>Built-in AI chat for admin support (OpenAI powered)</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                        <span>iOS</span>
                     </div>
                     <h3>Native iOS</h3>
                     <p>Built with SwiftUI for optimal iOS performance</p>
@@ -130,65 +145,48 @@
         </div>
     </section>
 
-    <!-- Test Accounts Section -->
-    <section id="accounts" class="accounts">
+    <!-- Roles Section -->
+    <section id="roles" class="accounts">
         <div class="container">
-            <h2>Test Accounts</h2>
-            <p class="section-subtitle">Try the app with these test accounts</p>
+            <h2>Role-based Workflows</h2>
+            <p class="section-subtitle">Designed for real employee and administrator workflows without exposing credentials publicly.</p>
             
             <div class="accounts-grid">
                 <div class="account-card">
-                    <h3>Admin Accounts</h3>
+                    <h3>Admin Workspace</h3>
                     <div class="account-list">
                         <div class="account-item">
-                            <span class="account-id">admin001</span>
-                            <span class="account-pass">admin001p</span>
+                            <span class="account-id">Employee management</span>
+                            <span class="account-pass">Directory</span>
                         </div>
                         <div class="account-item">
-                            <span class="account-id">admin002</span>
-                            <span class="account-pass">admin002p</span>
+                            <span class="account-id">Approval center</span>
+                            <span class="account-pass">Leave and makeup</span>
                         </div>
                         <div class="account-item">
-                            <span class="account-id">admin003</span>
-                            <span class="account-pass">admin003p</span>
-                        </div>
-                        <div class="account-item">
-                            <span class="account-id">admin004</span>
-                            <span class="account-pass">admin004p</span>
-                        </div>
-                        <div class="account-item">
-                            <span class="account-id">admin005</span>
-                            <span class="account-pass">admin005p</span>
+                            <span class="account-id">Analytics</span>
+                            <span class="account-pass">Attendance trends</span>
                         </div>
                     </div>
                 </div>
                 <div class="account-card">
-                    <h3>Employee Accounts</h3>
+                    <h3>Employee App</h3>
                     <div class="account-list">
                         <div class="account-item">
-                            <span class="account-id">worker001</span>
-                            <span class="account-pass">worker001p</span>
+                            <span class="account-id">Check-in and check-out</span>
+                            <span class="account-pass">Photo flow</span>
                         </div>
                         <div class="account-item">
-                            <span class="account-id">worker002</span>
-                            <span class="account-pass">worker002p</span>
+                            <span class="account-id">Records</span>
+                            <span class="account-pass">Daily history</span>
                         </div>
                         <div class="account-item">
-                            <span class="account-id">worker003</span>
-                            <span class="account-pass">worker003p</span>
-                        </div>
-                        <div class="account-item">
-                            <span class="account-id">worker004</span>
-                            <span class="account-pass">worker004p</span>
-                        </div>
-                        <div class="account-item">
-                            <span class="account-id">worker005</span>
-                            <span class="account-pass">worker005p</span>
+                            <span class="account-id">Applications</span>
+                            <span class="account-pass">Leave requests</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <p class="password-hint">Password pattern: accountName + 'p'</p>
         </div>
     </section>
 
@@ -198,7 +196,7 @@
             <h2>Get Started</h2>
             <div class="download-content">
                 <div class="download-option">
-                    <i class="fab fa-apple"></i>
+                    <span class="option-mark">iOS</span>
                     <h3>iOS Requirements</h3>
                     <ul>
                         <li>iOS 16.0 or later</li>
@@ -207,7 +205,7 @@
                     </ul>
                 </div>
                 <div class="download-option">
-                    <i class="fas fa-code"></i>
+                    <span class="option-mark">Code</span>
                     <h3>Build Instructions</h3>
                     <ol>
                         <li>Clone the repository</li>
@@ -219,7 +217,7 @@
             </div>
             <div class="download-buttons">
                 <a href="https://github.com/WeiProduct/Checking" class="btn btn-primary">
-                    <i class="fab fa-github"></i> View Source Code
+                    View Source Code
                 </a>
             </div>
         </div>
@@ -228,9 +226,9 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 AI Attendance System. Built with SwiftUI and ❤️</p>
+            <p>&copy; 2026 WeiProduct. AI Attendance System built with SwiftUI.</p>
             <div class="footer-links">
-                <a href="https://github.com/WeiProduct/Checking"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/WeiProduct/Checking">GitHub</a>
             </div>
         </div>
     </footer>

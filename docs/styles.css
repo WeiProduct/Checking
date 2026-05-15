@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--white);
@@ -52,8 +52,18 @@ body {
     color: var(--primary-color);
 }
 
-.nav-brand i {
-    margin-right: 0.5rem;
+.brand-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin-right: 0.65rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    font-size: 0.82rem;
+    font-weight: 800;
 }
 
 .nav-links {
@@ -142,22 +152,33 @@ body {
     color: var(--primary-color);
 }
 
-.phone-mockup {
-    position: relative;
-    width: 300px;
-    height: 600px;
-    background: #000;
-    border-radius: 40px;
-    padding: 10px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+.product-panel {
+    max-width: 430px;
     margin: 0 auto;
+    padding: 1.2rem;
+    border: 1px solid rgba(255,255,255,0.32);
+    border-radius: 28px;
+    background: rgba(255,255,255,0.14);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.22);
 }
 
-.phone-mockup img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 30px;
+.panel-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.92);
+    color: var(--text-color);
+}
+
+.panel-row + .panel-row {
+    margin-top: 0.8rem;
+}
+
+.panel-row strong {
+    color: var(--primary-color);
 }
 
 /* Features Section */
@@ -204,9 +225,23 @@ body {
     justify-content: center;
 }
 
-.feature-icon i {
-    font-size: 1.5rem;
+.feature-icon span {
+    font-size: 0.92rem;
+    font-weight: 800;
     color: var(--white);
+}
+
+.option-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 58px;
+    height: 42px;
+    padding: 0 12px;
+    border-radius: 14px;
+    background: var(--primary-color);
+    color: white;
+    font-weight: 800;
 }
 
 .feature-card h3 {
